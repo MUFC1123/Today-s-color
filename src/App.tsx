@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './App.css';
-// import Memo from './Memo'; 
 
 // 生成された色を格納するための型を定義
 type Color = string;
@@ -8,7 +7,6 @@ type Color = string;
 const App: React.FC = () => {
   const [colors, setColors] = useState<Color[]>([]);
   const [numberOfColors, setNumberOfColors] = useState<number>(0);
-  // const [notes, setNotes] = useState<string[]>([]);
 
   const generateRandomColor = (): Color => {
     const r = Math.floor(Math.random() * 256);
